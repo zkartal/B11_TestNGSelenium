@@ -16,6 +16,6 @@ public class Xpath_with_VisibleText_Partial {
         System.out.println("textElement = " + textElement.getText()); // textElement = Sign Into Your Account
 
         Thread.sleep(2000);
-        driver.close();
+       // driver.close();
     }
 }
