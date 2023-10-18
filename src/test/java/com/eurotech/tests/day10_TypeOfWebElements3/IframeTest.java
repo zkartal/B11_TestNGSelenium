@@ -19,7 +19,7 @@ public class IframeTest {
     @AfterMethod
     public void tearDown() throws InterruptedException {
         Thread.sleep(2000);
-        driver.close();
+       // driver.close();
     }
 
     @Test
@@ -85,6 +85,12 @@ public class IframeTest {
 
         //Your task:
         //Switch to left frame and get text
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame(0);
+        driver.switchTo().frame(0);
+        System.out.println("driver.findElement(By.tagName(\"body\")).getText() = " + driver.findElement(By.tagName("body")).getText());
+        Assert.assertEquals(driver.findElement(By.tagName("body")).getText(), "LEFT");
+        driver.switchTo().defaultContent();
 
     }
 }
