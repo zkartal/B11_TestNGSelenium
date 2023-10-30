@@ -1,18 +1,16 @@
-package com.eurotech.tests.serbestCalisma.testNG;
+package com.eurotech.tests.day00_serbestCalisma.testNG;
 
 import com.eurotech.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Day09_Task1 {
+public class Day09_TaskSelectTietel {
 
     WebDriver driver;
 

@@ -1,9 +1,4 @@
-package com.eurotech.tests.serbestCalisma.xpathLocatorsPractices;
-
-import com.eurotech.utilities.WebDriverFactory;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+package com.eurotech.tests.day00_serbestCalisma.xpathLocatorsPractices;
 
 public class XpathLocatorsPracticesTask2 {
 

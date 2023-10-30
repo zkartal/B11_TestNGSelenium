@@ -30,9 +30,6 @@ public class WebDriverFactory {
                 driver=new EdgeDriver();
                 break;
         }
-
-
         return driver;
     }
-
 }

@@ -1,4 +1,4 @@
-package com.eurotech.tests.serbestCalisma;
+package com.eurotech.tests.day00_serbestCalisma;
 
 import com.eurotech.utilities.WebDriverFactory;
 import com.github.javafaker.Faker;

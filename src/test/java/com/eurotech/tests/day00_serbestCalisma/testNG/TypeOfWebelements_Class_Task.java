@@ -1,4 +1,4 @@
-package com.eurotech.tests.serbestCalisma.testNG;
+package com.eurotech.tests.day00_serbestCalisma.testNG;
 
 import com.eurotech.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
