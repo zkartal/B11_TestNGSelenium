@@ -24,6 +24,8 @@ public class LoginPage extends BasePage{
     public WebElement welcomeText;
     @FindBy(id = "navbar-menu-list2")
     public WebElement submenuList;
+    @FindBy(xpath = "//h5[text()='Interactions']")
+    public WebElement interactions;
 
     ////////////////////////////////////////////////////////////
 
@@ -81,5 +83,9 @@ public class LoginPage extends BasePage{
         userEmailInput.sendKeys(email);
         userPasswordInput.sendKeys(password);
         submitBtn.click();
+    }
+    public void navigateToInteractions(){
+        interactions.click();
+
     }
 }
