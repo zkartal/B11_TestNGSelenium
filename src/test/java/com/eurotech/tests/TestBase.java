@@ -59,7 +59,7 @@ public class TestBase {
         driver = Driver.get();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        //driver.get(ConfigurationReader.get("url"));
+        driver.get(ConfigurationReader.get("url"));
         wait=new WebDriverWait(driver,15);
         actions=new Actions(driver);
 
@@ -84,6 +84,6 @@ public class TestBase {
 
         Thread.sleep(2000);
 
-        //Driver.closeDriver();
+        Driver.closeDriver();
     }
 }

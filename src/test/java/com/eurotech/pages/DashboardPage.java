@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class DashboardPage extends BasePage{
+public class DashboardPage extends BasePage {
     @FindBy(id = "dashboard-h1")
     public WebElement dashboardText;
 
@@ -19,11 +19,22 @@ public class DashboardPage extends BasePage{
     public List<WebElement> dashboardList;
     @FindBy(xpath = "(//tbody)[1]/tr[1]/td[2]") //*[text()='Test Automation Engineer']
     public WebElement jobTitle;
-    /** // same locator type with base menu so we can use navigateToMenu()
-     public void dashboardMenu(String menuName){
-     Driver.get().findElement(By.xpath("//*[text()='"+menuName+"']")).click();
-     }
+
+    /**
+     * // same locator type with base menu so we can use navigateToMenu()
+     * public void dashboardMenu(String menuName){
+     * Driver.get().findElement(By.xpath("//*[text()='"+menuName+"']")).click();
+     * }
      */
+    public String getTitle(String title) {
+        return Driver.get().findElement(By.xpath("//td[text()='" + title + "']")).getText();
+    }
 
+    public String getCompany(String company) {
+        return Driver.get().findElement(By.xpath("//td[text()='" + company + "']")).getText();
+    }
 
+    public String getTextCommon(String element) {
+        return Driver.get().findElement(By.xpath("//td[text()='" + element + "']")).getText();
+    }
 }
